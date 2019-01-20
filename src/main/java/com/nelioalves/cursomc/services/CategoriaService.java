@@ -20,7 +20,7 @@ public class CategoriaService {
 	@Autowired
 	private CategoriaRepository repo;
 	
-	// IMPLEMENTANDO UM SERVIÇO DE BUSCA CATEGORIA
+	// IMPLEMENTANDO UM SERVIÇO DE BUSCA CATEGORIA POR ID
 	public Categoria buscar(Integer id ) {
 		Optional<Categoria> obj = repo.findById(id);
 		return obj.orElse(null);
